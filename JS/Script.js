@@ -1,5 +1,5 @@
 
-var allProducts = document.querySelectorAll(" .products-item .products-info .products-des h3")
+var allProducts = document.querySelectorAll(".products-content .products-items .products-item ")
 
 var btn = document.querySelector("#btn1")
 
@@ -22,10 +22,10 @@ allProducts.forEach(function (item){
         content.innerHTML += item.textContent  +   "/" 
 
 
-        //  totalPrice += + (item.getAttribute("price"))
+         totalPrice += +(item.getAttribute("price"))
 
       
-        totalPrice += + (item.getAttribute("price"))
+
 
 console.log(totalPrice)
 
